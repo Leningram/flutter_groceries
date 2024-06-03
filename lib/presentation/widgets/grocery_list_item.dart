@@ -10,7 +10,7 @@ class GroceryListItem extends StatelessWidget {
     return ListTile(
       title: Text(item.name),
       leading: Container(width: 24, height: 24, color: item.category.color,),
-      trailing: Text(item.quantity.toString()),
+      trailing: Text(item.quantity.toString(), style: const TextStyle(fontSize: 16),),
     );
   }
 }
